@@ -1,0 +1,52 @@
+  
+ 
+  <div>
+
+      <div class="container">
+
+          <div class="starter-template">
+     <h1>Welcome to Rtcc Multi-Party example for External User(Step 6)</h1>
+    
+    
+        <h4 id="stat"></h4>
+           <div class="row well">
+             <div id="error" style="display:none;" class="bg-danger" >
+            <h4>An error occurred:</h4>
+            <div id="error-content">This is the error</div>
+            </div>
+    
+                <div class="center-block" style="float:none;width:500px">
+                    <h4 id="connection_status">Connection Status: Connecting as Attendee...</h4>
+                </div>
+            </div>
+    
+    
+    
+             <div class="row well" id="join_meeting_point" >
+                <div class="center-block" style="float:none;width:500px">
+    
+                    <h4>  Enter the meeting point id (generated on the host side) and click join</h4>
+                    <input class="center-block" style="width:230px" id="meeting_point_id" type="text"/>
+    
+                    <button  class="center-block btn btn-primary btn-lg" (click)="startCallUi()">Join</button>
+    
+                </div>
+            </div>
+    
+             <div class="row well" id="invite_status" style="display:none;">
+    
+             </div>
+             <div class="row well" id="join_status" style="display:none;">
+    
+    
+    
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+
+
+  </div>
