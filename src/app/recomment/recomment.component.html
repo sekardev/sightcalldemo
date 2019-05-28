@@ -1,0 +1,27 @@
+<div class="container" *ngIf="tempFriends">
+  <ng-template ngFor let-friend [ngForOf]="[selectedFriend]" >
+      <div [@friendAnimation]="orientation" class="friend">
+       <div *ngFor="let selectedfriend of tempFriends" >
+         <div >
+          <div class="name">
+              {{ selectedfriend.name }}
+          </div>
+          <div class="avatar"></div>
+          <div class="meta">
+              ID: {{ selectedfriend.id }}
+              &mdash;
+              Favorite Movie: {{ selectedfriend.favoriteMovie }}
+          </div>
+        </div>
+       </div>
+          
+      </div>
+  </ng-template>
+</div>
+<p class="controls">
+  &laquo;
+  <a (click)="showPrevFriend()">Previous Friend</a>
+  &mdash;
+  <a (click)="showNextFriend()">Next Friend</a>
+  &raquo;
+</p>
